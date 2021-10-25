@@ -8,18 +8,18 @@
 	<!-- BOX ICON -->
 	<link rel="shortcut icon" href="images/bxs-chevron-down-square.svg">
 	<!-- CSS FILE -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" type="text/css">
 	<!-- FONT -->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-	<!-- JQUERY -->
-	<script type="text/javascript" src="JQuery.js"></script>
+	<!-- JS -->
+	<script type="text/javascript" src="JS/JQuery.js"></script>
 </head>
 
 <body>
 	<!-- MAIN HOME SECTION-->
 	<section id="main" title="&#x1F3F3 Move the Mouse of your computer arround of this page, you will find something &#x1F61D Good luck!">
 		<!-- NAVIGATION BAR -->
-		<nav title="This is the menu bar and also be a shortcuts to the pages">
+		<nav title="This is the menu bar and also be a shortcuts to the pages" class="nav">
 			<!-- LOGO -->
 			<a href="#" class="logo" title="&#x1F44B Welcome to my website">VIET</a>
 
@@ -27,7 +27,7 @@
 			<div class="toggle"></div>
 
 			<!-- SIDEBAR MENU -->
-			<ul class="menu">
+			<ul class="menu toggle">
 				<!-- list menu -->
 				<li><a href="#main" class="active glow-on-hover" title="&#x1F3E0 Go to the Home page &#x1F3E0">Home</a></li>
 				<li><a href="#about" title="Go to About page">About</a></li>
@@ -436,6 +436,46 @@
 	                </h1>
 	            </a>
 	            <p>The objective of this course is to introduce the functioning of game engines (their role, their functionalities), as well as the practical handling of a game engine in particular (Godot).</p>
+
+	            <button onclick="document.getElementById('fgd').style.display='block'" style="font-size: 15px; transform: translateX(20px);" class="contact-btn-footer"><b style="color: #6495ED;;">More</b></button>
+				<div id="fgd" class="modal">
+				  	<form class="modal-content" action="/action_page.php">
+				    	<p style="text-decoration:underline;">Link suggestion for my project in GODOT: </p><br>
+					    <a href="https://docs.godotengine.org/it/stable/tutorials/animation/2d_skeletons.html?fbclid=IwAR1yBO9-QpE0sL2MBvH-U7kmOvO8Mhkivtrg561H4_yHfxoT7U_YtWuSfOE#introduction" target="_blank">
+			            	<p>
+			            		-2D skeletons GD:
+			            	</p>
+			            </a>
+			            <a href="https://gitlab.com/Falk689/berzerk-falk?fbclid=IwAR0jZltHDcvi-x7LRS34MAmM9DM0FoP2kCcNItJyTbnJ7IZC642RKd6PPX4" target="_blank">
+			            	<p>
+				            	-Extended remake of Berzerk (1980) by Stern Electronics, made in Godot Engine:
+				            </p>
+			            </a>
+			            <a href="https://github.com/trolog/GodotStateMachineRoamAI" target="_blank">
+			            	<p>
+				            	-GD state machine RoamAI:
+				            </p>
+			            </a>
+			            <a href="https://github.com/GDQuest/godot-beginner-2d-platformer/releases/tag/1.1.0" target="_blank">
+			            	<p>
+				            	-GD beginner 2d platformer:
+				            </p>
+			            </a>
+			            <a href="https://github.com/Delta12Studio/Lango_GodotRPG?fbclid=IwAR35TuWMqG-ZU20l_twjqKfSfOTgL1ZLTrZiyeAZvHqp9GQ9Xz-1lU5vv-Y" target="_blank">
+			            	<p>
+				            	-Lango_GodotRPG:
+				            </p>
+			            </a>
+			            <a href="https://bitbucket.org/uheartbeast/platformer-shooter/src/master/" target="_blank">
+			            	<p>
+				            	-Platformer-shooter from Heart Beast:
+				            </p>
+			            </a>
+					    <div class="clearfix">
+						    <button type="button" onclick="document.getElementById('fgd').style.display='none'" class="cancelbtn">Cancel</button>
+					    </div>
+					</form>
+				</div>
 	        </div>
 	    </div>
 
@@ -466,26 +506,24 @@
 	            <button onclick="document.getElementById('fp').style.display='block'" style="font-size: 15px; transform: translateX(20px);" class="contact-btn-footer"><b style="color: #6495ED;;">More</b></button>
 				<div id="fp" class="modal">
 				  	<form class="modal-content" action="/action_page.php">
-				    	<div class="container"><br><br>
-				    		<p style="text-decoration:underline;">This is all of the links to Ocaml course, just go down and take a look: </p><br>
-						    <a href="http://gallium.inria.fr/~scherer/tmp/cours-ocaml-paris8-2021.org.html#orgb91d28f" target="_blank">
-				            	<p>
-				            		Online course notes 2021 - The programmation in Ocaml.
-				            	</p>
-				            </a>
-				            <a href="http://gallium.inria.fr/~scherer/doc/cours-ocaml-paris8-2019.org" target="_blank">
-				            	<p>
-					            	Online course notes 2019 - The programmation in Ocaml.
-					            </p>
-				            </a>
-				            <a href="https://www.good-eris.net/formation-ocaml/" target="_blank">
-				            	<p>
-					            	Language or course: OCaml
-					            </p>
-				            </a>
-						    <div class="clearfix">
-							    <button type="button" onclick="document.getElementById('fp').style.display='none'" class="cancelbtn">Cancel</button>
-						    </div>
+				    	<p style="text-decoration:underline;">This is all of the links to Ocaml course, just go down and take a look: </p><br>
+					    <a href="http://gallium.inria.fr/~scherer/tmp/cours-ocaml-paris8-2021.org.html#orgb91d28f" target="_blank">
+			            	<p>
+			            		Online course notes 2021 - The programmation in Ocaml.
+			            	</p>
+			            </a>
+			            <a href="http://gallium.inria.fr/~scherer/doc/cours-ocaml-paris8-2019.org" target="_blank">
+			            	<p>
+				            	Online course notes 2019 - The programmation in Ocaml.
+				            </p>
+			            </a>
+			            <a href="https://www.good-eris.net/formation-ocaml/" target="_blank">
+			            	<p>
+				            	Language or course: OCaml
+				            </p>
+			            </a>
+					    <div class="clearfix">
+						    <button type="button" onclick="document.getElementById('fp').style.display='none'" class="cancelbtn">Cancel</button>
 					    </div>
 					</form>
 				</div>
@@ -516,7 +554,32 @@
 	                    Programming Methodology
 	                </h1>
 	            </a>
+	            <button onclick="document.getElementById('fmdp').style.display='block'" style="font-size: 15px; transform: translateX(20px);" class="contact-btn-footer"><b style="color: #6495ED;;">More</b></button>
+				<div id="fmdp" class="modal">
+				  	<form class="modal-content" action="/action_page.php">
+				  		<div class="clearfix">
+						    <button type="button" onclick="document.getElementById('fmdp').style.display='none'" class="cancelbtn">Cancel</button>
+					    </div>
+				    	<p style="text-decoration:underline;">Some presentation of this course in PDF: </p><br>
+					    <a href="option-p8/intro_Python.pdf" target="_blank">
+			            	<p>
+			            		Introduction about the langage Python.
+			            	</p>
+			            </a>
+			            <a href="option-p8/guide_rapide_terminal.pdf" target="_blank">
+			            	<p>
+				            	Some commande bash in Terminal.
+				            </p>
+			            </a>
+			            <a href="option-p8/presentation_bash_cours1.pdf" target="_blank">
+			            	<p>
+				            	Basic script bash terminal
+				            </p>
+			            </a>
+					</form>
+				</div>
 	            <p>The objective of this course is to learn how to learn to program. It is a question of acquiring the bases essential to the learning of the programming and thus to the pursuit of the license. This course is an introduction to the use of several programming languages(Python, C, Bash, LaTeX), as well as some essential tools (interpreters, compilers, version control manager, compilation manager). Each point will be reviewed and deepened later in other courses of the license.</p>
+
 	        </div>
 	    </div>
 
@@ -578,21 +641,61 @@
 	</section>
 
 	<!-- SCRIPT -->
-	<script type="text/javascript" src="JQuery.js"></script>
-	<!-- For change Bar Icon to "x" -->
+	<script type="text/javascript" src="JS/JQuery.js"></script>
 	<script type="text/javascript">
+		// normal button
 		var modal = document.getElementById('cm');
 		window.onclick = function(event) {
 		  if (event.target == modal) {
 		    modal.style.display = "none";
 		  }
 		}
+
+		// menu bar
 		$(document).ready(function(){
 			$('.toggle').click(function() {
 				$('.toggle').toggleClass('active');
 				$('nav ul').toggleClass('active-menu');
 			})
-		})	
+		});
+
+
+		//earth-image
+		function ShowRedo1() 
+		{
+		    document.getElementById("image-footer").src = "images/earth.png";  
+		}
+		function ShowUndo1() 
+		{
+		    document.getElementById("image-footer").src = "images/earth1.png"; 
+		}
+		// about-image
+		function ShowRedo() 
+		{
+		    document.getElementById("image-about").src = "images/pxArt.png";  
+		}
+
+		function ShowUndo() 
+		{
+		    document.getElementById("image-about").src = "images/119463131_111561834025704_8423021373559567304_n.jpg"; 
+		}
+
+		// Enable hidden nav bar
+		{
+		  const nav = document.querySelector(".nav");
+		  let lastScrollY = window.scrollY;
+
+		  window.addEventListener("scroll", () => {
+		    if (lastScrollY < window.scrollY) {
+		      nav.classList.add("nav--hidden");
+		    } else {
+		      nav.classList.remove("nav--hidden");
+		    }
+
+		    lastScrollY = window.scrollY;
+		  });
+		}
+
 	</script>
 
 
@@ -603,6 +706,10 @@
 		<a href="https://www.instagram.com/anh264nguyen/" target="_blank" title="Go to my Instagram, but I warnning you that just empty for now &#x1F623"><i class="fab fa-instagram"></i></a>
 		<a href="https://github.com/Viet281101" target="_blank" title="Go to GitHub to watch some of my projects &#x1F9D0"><i class="fab fa-github"></i></a>
 	</div>
+
+	<a href="#main" id="btn-go-top">
+		<button class="btn-go-top" title="You want to go top? Click here !!"><i class="fas fa-chevron-up"></i></button>
+	</a>
 
 
 	<!-- footer -->
@@ -663,31 +770,10 @@
 			    	<input id="Button3" type="button" title="To see my origin picture" value="Origin" onclick="ShowUndo1()" />
 			        <input id="Button4" type="button" title="Change to the pixel art" value="Pixel" onclick="ShowRedo1()" />&nbsp;&nbsp; 
 				</p>
-			    <script language="javascript">
-			    	//earth-image
-			    	function ShowRedo1() 
-			    	{
-			            document.getElementById("image-footer").src = "images/earth.png";  
-			        }
-			        function ShowUndo1() 
-			    	{
-			            document.getElementById("image-footer").src = "images/earth1.png"; 
-			        }
-			        // about-image
-			        function ShowRedo() 
-			    	{
-			            document.getElementById("image-about").src = "images/pxArt.png";  
-			        }
-
-			        function ShowUndo() 
-			    	{
-			            document.getElementById("image-about").src = "images/119463131_111561834025704_8423021373559567304_n.jpg"; 
-			        }
-			    </script>
 			</div>
 		</footer>
 	</section>
-
+	
 
 	<!-- COPY RIGHT -->
     <div class="copyright">

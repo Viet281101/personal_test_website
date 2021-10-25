@@ -55,6 +55,8 @@ body {
 	padding: 0px;
 	background-color: #161616;
 	font-family: Pixel;
+	--nav-height: 80px;
+	padding-top: var(--nav-height);
 }
 
 body[title]:hover::after {
@@ -116,6 +118,13 @@ nav {
 	/* background-image: url("images/space-bg-pixel/SpaceWallpaper1280x448.png"); */
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
 	z-index: 1;
+}
+
+
+.nav--hidden {
+  transform: translateY(calc(-1 * var(--nav-height)));
+  box-shadow: none;
+  transition:all ease 0.5s;
 }
 
 
@@ -893,6 +902,7 @@ nav {
 
 /* small button in favorite section */
 .favor-btn-learn {
+	font-family: Pixel;
 	border-color: var(--favor-text);
 	border-width: 3px;
 	width: 100px;
@@ -902,6 +912,7 @@ nav {
 
 
 .cancelbtn-favor {
+	font-family: Pixel;
 	font-size: 30px;
 	text-align: center;
 	padding: 14px 20px;
@@ -1240,13 +1251,14 @@ input[type="text"], input[type="email"] {
 .modal-content {
 	text-align: center;
 	background-color: black;
-	margin: 10%; /* 5% from the top, 15% from the bottom and centered */
+	margin: 10%;
 	border: 1px solid #888;
 	border-radius: 30px;
-	width: 50%; /* Could be more or less, depending on screen size */
+	width: 50%;
 }
 
 .cancelbtn {
+	font-family: Pixel;
 	font-size: 30px;
 	text-align: center;
 	padding: 14px 20px;
@@ -1262,6 +1274,7 @@ input[type="text"], input[type="email"] {
 .contact-btn-footer {
 	border-color: var(--contact-color);
 	border-width: 3px;
+	font-family: Pixel;
 }
 
 
@@ -1286,7 +1299,7 @@ input[type="text"], input[type="email"] {
 }
 
 .footer-model {
-	transform: translateY(180px);
+	transform: translateY(160px);
 	opacity: 0;
 }
 
@@ -1323,8 +1336,32 @@ input[type="text"], input[type="email"] {
 	transition: all-ease 0.3s;
 }
 
-
 /* END FOOTER */
+
+
+
+
+/* BUTTON GO TOP */
+
+.btn-go-top {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+
+.btn-go-top:hover {
+	transform:scale(1.2);
+	transition: all ease 0.3s;
+}
+
+
+/* END BUTTON GO TOP */
+
+
+
 
 
 @media(max-width: 1190px) {
