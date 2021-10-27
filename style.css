@@ -127,10 +127,6 @@ a {
 	transition: .4s;
 }
 
-#check {
-	display: none;
-}
-
 #check:checked ~ .sidebar {
 	left: 0px;
 }
@@ -145,7 +141,7 @@ a {
 	left: 195px;
 }
 
-#check:checked ~ label section {
+#check:checked ~ section {
 	left: 250px;
 }
 
@@ -172,7 +168,7 @@ label #btn-sidebar:hover {
 }
 
 label #cancel-sidebar {
-	z-index: 3;
+	z-index: 5;
 	left: -195px;
 	top: 17px;
 	font-size: 30px;
