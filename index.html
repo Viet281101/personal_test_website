@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="images/bxs-chevron-down-square.svg">
 	<!-- CSS FILE -->
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 	<!-- FONT -->
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	<!-- JS -->
@@ -16,6 +17,26 @@
 </head>
 
 <body>
+	<!-- SIDE BAR (i make it for when the main navigation hide) -->
+	<input type="check" id="check">
+	<label for="check">
+		<i class="fas fa-bars" id="btn-sidebar"></i>
+		<i class="fas fa-times" id="cancel-sidebar"></i>
+	</label>
+	<div class="sidebar">
+		<header>
+			Menu
+		</header>
+		<ul class="list-sidebar">
+			<li><a href="#main" class="active glow-on-hover" title="&#x1F3E0 Go to the Home page &#x1F3E0">Home</a></li>
+				<li><a href="#about" title="Go to About page">About</a></li>
+				<li><a href="#school" title="Go to School page to see my opject in university">School</a></li>
+				<li><a href="#project" title="Go to Project page">Project</a></li>
+				<li><a href="#interest" title="Go to Interrest page to see some of my hobby">Interest</a></li>
+				<li><a href="#contact-form" title="Go to Contact page to contact with me anytime">Contact</a></li>
+		</ul>
+	</div>
+
 	<!-- MAIN HOME SECTION-->
 	<section id="main" title="&#x1F3F3 Move the Mouse of your computer arround of this page, you will find something &#x1F61D Good luck!">
 		<!-- NAVIGATION BAR -->
@@ -309,7 +330,7 @@
 						<button onclick="document.getElementById('fl').style.display='block'" style="font-size: 15px;" class="favor-btn-learn"><b style="color: #dc143c;">Learning</b></button>
 						<div id="fl" class="modal">
 						  	<form class="modal-content" action="/action_page.php">
-						  		<p style="text-decoration:underline;">This is a list of something that I want to learn now, just go down and take a look: </p><br>
+						  		<p style="text-decoration:underline;">This is a list of some teaching web: </p><br>
 					  			<a href="https://www.w3schools.com/" target="_blank">
 					  				<p>
 					  					w3school
@@ -340,6 +361,36 @@
 					            		CodingNepal
 					            	</p>
 					            </a>
+					            <a href="https://exercism.org/" target="_blank">
+					            	<p>
+					            		Exercism
+					            	</p>
+					            </a>
+					            <a href="https://codelearn.io/" target="_blank">
+					            	<p>
+					            		CodeLearn
+					            	</p>
+					            </a>
+					            <br>
+					            <p style="text-decoration:underline;">ReactCss list web i want to learn:</p><br>
+					            <a href="https://www.npmjs.com/package/react-cssfx-loading?fbclid=IwAR1j5cY-dK0vnSJvHx53gq2nQV9brNiT3Ew1U3OxYxTfzQS7hOEY5cp1uQc" target="_blank">
+					            	<p>
+					            		React CSSFx Loading
+					            	</p>
+					            </a>
+					            <a href="https://reactjs.org/docs/faq-styling.html" target="_blank">
+					            	<p>
+					            		Styling and CSS
+					            	</p>
+					            </a>
+					            <br>
+
+					            <p style="text-decoration: underline;">List some tip of CSS that so amazing: </p><br>
+					            <a href="https://codepen.io/l-nht-tin/pen/QWMEpWb?fbclid=IwAR2lIljxGV4t1IB2pZ4vglMEzStUM67OCbvMu9pyqG8HhRe6LbRggGndLIQ" target="_blank">
+					            	<p>
+					            		Flip book in CSS
+					            	</p>
+					            </a>
 							    <div class="clearfix">
 								    <button type="button" onclick="document.getElementById('fl').style.display='none'" class="cancelbtn-favor">Cancel</button>
 							    </div>
@@ -362,6 +413,22 @@
 					</h1>
 					<p>
 						Teaching Book, Document, Entertainment Book
+						<br>
+						<button onclick="document.getElementById('fbook').style.display='block'" style="font-size: 15px;" class="favor-btn-learn"><b style="color: #dc143c;">Book</b></button>
+						<div id="fbook" class="modal">
+						  	<form class="modal-content" action="/action_page.php">
+						  		<p style="text-decoration:underline;">This is a list of some teaching book: </p><br>
+					  			<a href="option-p8/duckett.pdf" target="_blank">
+					  				<p>
+					  					Nice way to learn about HTML & CSS - John Duckett
+					  				</p>
+					  			</a>
+					  			<br>
+							    <div class="clearfix">
+								    <button type="button" onclick="document.getElementById('fbook').style.display='none'" class="cancelbtn-favor">Cancel</button>
+							    </div>
+							</form>
+						</div>
 					</p>
 				</div>
 				<!-- image -->
@@ -477,6 +544,11 @@
 				            	-Platformer-shooter from Heart Beast:
 				            </p>
 			            </a>
+			            <a href="https://github.com/duongvituan/godot-awesome-splash?fbclid=IwAR3qm8cLmi7YTCNvOKxR8OKjev5As6nLwcpBimRJqR64NvUvYnXZmRR-rog">
+			            	<p>
+			            		-Godot Awesome splash
+			            	</p>
+			            </a>
 					    <div class="clearfix">
 						    <button type="button" onclick="document.getElementById('fgd').style.display='none'" class="cancelbtn">Cancel</button>
 					    </div>
@@ -546,7 +618,51 @@
 	                    Online Identity Management
 	                </h1>
 	            </a>
-	            <p>The objective of this course is to learn the best practices to adopt to pay attention to your online image, as well as to create and maintain a simple personal web page that will be fed by the various academic and personal projects of each one. .</p>
+	            <p>The objective of this course is to learn the best practices to adopt to pay attention to your online image, as well as to create and maintain a simple personal web page that will be fed by the various academic and personal projects of each one. </p>
+	            <button onclick="document.getElementById('foim').style.display='block'" style="font-size: 15px; transform: translateX(20px);" class="contact-btn-footer"><b style="color: #6495ED;;">More</b></button>
+				<div id="foim" class="modal">
+				  	<form class="modal-content" action="/action_page.php">
+				  		<div class="clearfix">
+						    <button type="button" onclick="document.getElementById('foim').style.display='none'" class="cancelbtn">Cancel</button>
+					    </div>
+				    	<p style="text-decoration:underline;">List note code online: </p><br>
+					    <a href="https://jsfiddle.net/" target="_blank">
+			            	<p>
+			            		JSfidle
+			            	</p>
+			            </a>
+			            <a href="https://codepen.io/trending" target="_blank">
+			            	<p>
+				            	CodePen
+				            </p>
+			            </a>
+			            <a href="https://codesandbox.io/" target="_blank">
+			            	<p>
+				            	CodeSandbox
+				            </p>
+			            </a>
+			            <a href="https://paiza.io/en" target="_blank">
+			            	<p>
+			            		Paiza.IO
+			            	</p>
+			            </a>
+			            <a href="https://ideone.com/" target="_blank">
+			            	<p>
+			            		ideone.com
+			            	</p>
+			            </a>
+			            <a href="https://www.tutorialspoint.com/execute_nodejs_online.php" target="_blank">
+			            	<p>
+			            		codingbackground
+			            	</p>
+			            </a>
+			            <a href="https://www.codingrooms.com/compiler/html-css-js/" target="_blank">
+			            	<p>
+			            		Coding Rooms
+			            	</p>
+			            </a>
+					</form>
+				</div>
 	        </div>
 	    </div>
 
