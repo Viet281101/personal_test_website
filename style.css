@@ -999,6 +999,7 @@ nav {
 .favor-btn-learn {
 	font-family: Pixel;
 	border-color: var(--favor-text);
+	background-color: var(--idle-text);
 	border-width: 3px;
 	width: 100px;
 	height: 40px;
@@ -1374,6 +1375,7 @@ input[type="text"], input[type="email"] {
 }
 
 .contact-btn-footer {
+	background-color: var(--idle-text);
 	border-color: var(--contact-color);
 	border-width: 3px;
 	font-family: Pixel;
